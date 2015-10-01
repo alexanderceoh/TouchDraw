@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TouchDraw" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="DrawView" customModule="TouchDraw" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHx-jf-mMB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adw-u9-Fsl">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MaQ-XL-x0T">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Adw-u9-Fsl" secondAttribute="bottom" id="PrP-MP-O0s"/>
+                                    <constraint firstAttribute="trailing" secondItem="Adw-u9-Fsl" secondAttribute="trailing" id="Qah-h0-zfb"/>
+                                    <constraint firstItem="Adw-u9-Fsl" firstAttribute="top" secondItem="bHx-jf-mMB" secondAttribute="top" id="XSy-fz-dtU"/>
+                                    <constraint firstItem="Adw-u9-Fsl" firstAttribute="leading" secondItem="bHx-jf-mMB" secondAttribute="leading" id="fC2-M8-H0F"/>
+                                    <constraint firstAttribute="height" constant="200" id="gjj-6g-Fwc"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOC-5A-nhA" customClass="ToggleButton" customModule="TouchDraw" customModuleProvider="target">
+                                <rect key="frame" x="260" y="200" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Z5j-k5-X2l"/>
+                                    <constraint firstAttribute="width" constant="60" id="j8I-U8-hSZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.94734453910000005" green="0.45325181368700201" blue="0.10585488530312549" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleInset">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="toggleControlPanel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z6i-4v-qfd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bHx-jf-mMB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RtM-c3-Ufa"/>
+                            <constraint firstAttribute="trailing" secondItem="QOC-5A-nhA" secondAttribute="trailing" id="TPb-Dr-crO"/>
+                            <constraint firstItem="QOC-5A-nhA" firstAttribute="top" secondItem="bHx-jf-mMB" secondAttribute="bottom" id="kQ7-hi-mTM"/>
+                            <constraint firstItem="bHx-jf-mMB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mAe-d2-KHd"/>
+                            <constraint firstAttribute="trailing" secondItem="bHx-jf-mMB" secondAttribute="trailing" id="pZd-FW-4T8"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="controlPanelTop" destination="RtM-c3-Ufa" id="ZL9-EN-cFL"/>
+                        <outlet property="controlPanelView" destination="bHx-jf-mMB" id="ZbY-pw-zhr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="387"/>
+        </scene>
+    </scenes>
+</document>

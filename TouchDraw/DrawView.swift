@@ -62,6 +62,9 @@ class DrawView: UIView {
                             CGContextAddLineToPoint(context, right.x, right.y)
                             CGContextAddLineToPoint(context, left.x, left.y)
                             
+                            // we're connecting to the top for stroke purposes, but don't need for fill
+                            CGContextAddLineToPoint(context, top.x, top.y)
+                            
                             // then fill will automatically connect the last point to the first point and fill it in
                             CGContextFillPath(context)
                             
@@ -70,6 +73,24 @@ class DrawView: UIView {
                             CGContextFillRect(context, rect)
                             
                             
+                        case .Diamond :
+                            
+                            let top = CGPoint(x: width / 2 + start.x, y: start.y)
+                            let right = CGPoint(x: end.x, y: height / 2 + start.y)
+                            let left = CGPoint(x: start.x, y: height / 2 + start.y)
+                            let bottom = CGPoint(x: width / 2 + start.x, y: end.y)
+                            
+                            
+                            CGContextMoveToPoint(context, top.x, top.y)
+                            CGContextAddLineToPoint(context, right.x, right.y)
+                            CGContextAddLineToPoint(context, bottom.x, bottom.y)
+                            CGContextAddLineToPoint(context, left.x, left.y)
+                            
+                            // closes the diamond
+                            CGContextAddLineToPoint(context, top.x, top.y)
+                            
+                            CGContextFillPath(context)
+                        
                             
                         }
                         
@@ -101,17 +122,17 @@ class DrawView: UIView {
                         CGContextAddLines(context, scribble.points, scribble.points.count)
                         
                     }
-                        
-                        CGContextAddLineToPoint(context, end.x, end.y)
-                        // actually drawing the path
-                        CGContextStrokePath(context)
                     
-                    }
+                    CGContextAddLineToPoint(context, end.x, end.y)
+                    // actually drawing the path
+                    CGContextStrokePath(context)
                     
-                
-                
                 }
-    
+                
+                
+                
+            }
+            
         }
         
         
@@ -207,7 +228,7 @@ class Scribble : Line {
 
 enum ShapeType {
     
-    case Rectangle, Circle, Triangle
+    case Rectangle, Circle, Triangle, Diamond
     
 }
 

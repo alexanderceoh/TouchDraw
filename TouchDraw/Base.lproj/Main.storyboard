@@ -24,6 +24,92 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MaQ-XL-x0T">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cz5-LM-bxe">
+                                                    <rect key="frame" x="20" y="152" width="40" height="40"/>
+                                                    <state key="normal" title="L"/>
+                                                    <connections>
+                                                        <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Am-Nr-war"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63v-Wy-CSt">
+                                                    <rect key="frame" x="68" y="152" width="40" height="40"/>
+                                                    <state key="normal" title="S"/>
+                                                    <connections>
+                                                        <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ykS-Iw-0QW"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yF-NG-bUq">
+                                                    <rect key="frame" x="116" y="152" width="40" height="40"/>
+                                                    <state key="normal" title="R"/>
+                                                    <connections>
+                                                        <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0DF-Fs-Dd0"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjT-Be-2yq">
+                                                    <rect key="frame" x="164" y="152" width="40" height="40"/>
+                                                    <state key="normal" title="C"/>
+                                                    <connections>
+                                                        <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N6q-4e-dOJ"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncu-Ja-AgY">
+                                                    <rect key="frame" x="212" y="152" width="40" height="40"/>
+                                                    <state key="normal" title="T"/>
+                                                    <connections>
+                                                        <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOC-5R-7mm"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USl-M2-ZKA">
+                                                    <rect key="frame" x="260" y="152" width="40" height="40"/>
+                                                    <state key="normal" title="D"/>
+                                                    <connections>
+                                                        <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RSG-Xf-8Wc"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SM-Gs-ejL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="51"/>
+                                                    <color key="backgroundColor" red="0.94734453910000005" green="0.1680146824" blue="0.018969229809999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kPw-9c-d01"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbK-7F-lW2">
+                                                    <rect key="frame" x="51" y="0.0" width="50" height="51"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOw-Q4-Fgj"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulI-Nr-HW0">
+                                                    <rect key="frame" x="106" y="0.0" width="50" height="51"/>
+                                                    <color key="backgroundColor" red="0.1535328838888812" green="0.94734453910000005" blue="0.26006941632231723" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rox-e9-qPX"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dT9-OU-G2Q">
+                                                    <rect key="frame" x="164" y="67" width="71" height="55"/>
+                                                    <state key="normal" title="Clear"/>
+                                                    <connections>
+                                                        <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yeW-uI-7KH"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhc-vU-tOn">
+                                                    <rect key="frame" x="76" y="67" width="71" height="55"/>
+                                                    <state key="normal" title="Undo"/>
+                                                    <connections>
+                                                        <action selector="undo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lMH-dq-oEL"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXL-3C-nAE">
+                                                    <rect key="frame" x="159" y="0.0" width="50" height="51"/>
+                                                    <color key="backgroundColor" red="0.030362215909090939" green="0.028314167789883032" blue="0.0039432649117339454" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8CE-wS-Rdz"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
                                         </view>
                                         <blurEffect style="light"/>
                                     </visualEffectView>

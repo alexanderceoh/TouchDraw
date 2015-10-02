@@ -67,27 +67,6 @@
                                                         <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RSG-Xf-8Wc"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SM-Gs-ejL">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="51"/>
-                                                    <color key="backgroundColor" red="0.94734453910000005" green="0.1680146824" blue="0.018969229809999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kPw-9c-d01"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbK-7F-lW2">
-                                                    <rect key="frame" x="51" y="0.0" width="50" height="51"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOw-Q4-Fgj"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulI-Nr-HW0">
-                                                    <rect key="frame" x="106" y="0.0" width="50" height="51"/>
-                                                    <color key="backgroundColor" red="0.1535328838888812" green="0.94734453910000005" blue="0.26006941632231723" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rox-e9-qPX"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dT9-OU-G2Q">
                                                     <rect key="frame" x="164" y="111" width="71" height="33"/>
                                                     <state key="normal" title="Clear"/>
@@ -100,13 +79,6 @@
                                                     <state key="normal" title="Undo"/>
                                                     <connections>
                                                         <action selector="undo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lMH-dq-oEL"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXL-3C-nAE">
-                                                    <rect key="frame" x="159" y="0.0" width="50" height="51"/>
-                                                    <color key="backgroundColor" red="0.030362215909090939" green="0.028314167789883032" blue="0.0039432649117339454" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8CE-wS-Rdz"/>
                                                     </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l0K-HX-7HE" customClass="TouchSlider" customModule="TouchDraw" customModuleProvider="target">
@@ -124,6 +96,27 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0ed-jq-gKe">
+                                                    <rect key="frame" x="8" y="4" width="304" height="43"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1AE-64-HwJ">
+                                                        <size key="itemSize" width="40" height="40"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCell" id="gBO-eI-GIy">
+                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
                                             </subviews>
                                         </view>
                                         <blurEffect style="light"/>
@@ -174,6 +167,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
+                        <outlet property="colorPallete" destination="0ed-jq-gKe" id="KZQ-Dl-g0v"/>
                         <outlet property="controlPanelTop" destination="RtM-c3-Ufa" id="ZL9-EN-cFL"/>
                         <outlet property="controlPanelView" destination="bHx-jf-mMB" id="ZbY-pw-zhr"/>
                         <outlet property="toggleButton" destination="QOC-5A-nhA" id="Uck-Ub-opn"/>
@@ -181,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34" y="318"/>
+            <point key="canvasLocation" x="35" y="338"/>
         </scene>
     </scenes>
 </document>

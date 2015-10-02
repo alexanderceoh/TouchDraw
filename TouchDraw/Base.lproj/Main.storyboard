@@ -89,14 +89,14 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dT9-OU-G2Q">
-                                                    <rect key="frame" x="164" y="67" width="71" height="55"/>
+                                                    <rect key="frame" x="164" y="111" width="71" height="33"/>
                                                     <state key="normal" title="Clear"/>
                                                     <connections>
                                                         <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yeW-uI-7KH"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhc-vU-tOn">
-                                                    <rect key="frame" x="76" y="67" width="71" height="55"/>
+                                                    <rect key="frame" x="75" y="112" width="71" height="32"/>
                                                     <state key="normal" title="Undo"/>
                                                     <connections>
                                                         <action selector="undo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lMH-dq-oEL"/>
@@ -109,6 +109,21 @@
                                                         <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8CE-wS-Rdz"/>
                                                     </connections>
                                                 </button>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l0K-HX-7HE" customClass="TouchSlider" customModule="TouchDraw" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="62" width="304" height="41"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                            <real key="value" value="0.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <blurEffect style="light"/>
@@ -161,11 +176,12 @@
                     <connections>
                         <outlet property="controlPanelTop" destination="RtM-c3-Ufa" id="ZL9-EN-cFL"/>
                         <outlet property="controlPanelView" destination="bHx-jf-mMB" id="ZbY-pw-zhr"/>
+                        <outlet property="toggleButton" destination="QOC-5A-nhA" id="Uck-Ub-opn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="220" y="387"/>
+            <point key="canvasLocation" x="34" y="318"/>
         </scene>
     </scenes>
 </document>

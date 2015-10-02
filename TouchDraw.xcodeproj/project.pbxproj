@@ -14,6 +14,7 @@
 		496E811C1BBC1A2A00A6C38F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496E811B1BBC1A2A00A6C38F /* Assets.xcassets */; };
 		496E811F1BBC1A2A00A6C38F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496E811D1BBC1A2A00A6C38F /* LaunchScreen.storyboard */; };
 		496E81271BBC1A4200A6C38F /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E81261BBC1A4200A6C38F /* DrawView.swift */; settings = {ASSET_TAGS = (); }; };
+		49C77BCA1BBF0657007B377D /* TouchSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C77BC91BBF0657007B377D /* TouchSlider.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		496E811E1BBC1A2A00A6C38F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		496E81201BBC1A2A00A6C38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496E81261BBC1A4200A6C38F /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		49C77BC91BBF0657007B377D /* TouchSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				496E811D1BBC1A2A00A6C38F /* LaunchScreen.storyboard */,
 				496E81201BBC1A2A00A6C38F /* Info.plist */,
 				496731711BBD7DA700DD11D8 /* ToggleButton.swift */,
+				49C77BC91BBF0657007B377D /* TouchSlider.swift */,
 			);
 			path = TouchDraw;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				496E81171BBC1A2A00A6C38F /* ViewController.swift in Sources */,
+				49C77BCA1BBF0657007B377D /* TouchSlider.swift in Sources */,
 				496E81151BBC1A2A00A6C38F /* AppDelegate.swift in Sources */,
 				496E81271BBC1A4200A6C38F /* DrawView.swift in Sources */,
 				496731721BBD7DA700DD11D8 /* ToggleButton.swift in Sources */,
